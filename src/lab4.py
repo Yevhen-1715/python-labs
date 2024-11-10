@@ -42,35 +42,12 @@ class laptop:
         print("laptop deleted")
 
 def main():
-    noytbook_0 = laptop()
-    noytbook = laptop("3.90 GHz", "32GB", "Razer", "240Hz", "2020")
-    noytbook_1 = laptop("4.10 GHz", "16GB", "MSI", "60Hz", "2019")
-    noytbook_2 = laptop("5.20 GHz", "64GB", "Logitech", "360Hz", "2023")
-    print(noytbook_0)
-    print(noytbook)
-    print(noytbook_1)
-    print(repr(noytbook_2))
-    
-    
-
+    laptopzero = laptop()
+    laptopone = laptop("3.90 GHz", "32GB", "Razer", "240Hz", "2020")
+    laptopsecond = laptop("4.10 GHz", "16GB", "MSI", "60Hz", "2019")
+    laptopthird = laptop("5.20 GHz", "64GB", "Logitech", "360Hz", "2023")
+    print(laptopzero)
+    print(laptopone)
+    print(laptopsecond)
+    print(repr(laptopthird))
 main()
-
-
-
-class Laptop:
-    def __init__(self, CPU, RAM, company):
-        self.CPU = CPU
-        self.RAM = RAM
-        self.company = company
-
-    def display(self):
-        print(f"CPU: {self.CPU}, RAM: {self.RAM}, Company: {self.company}")
-
-my_laptop = Laptop("3.90 GHz", "32GB", "Razer")
-
-print(my_laptop.CPU)        
-print(my_laptop.RAM)        
-print(my_laptop.company)    
-
-
-my_laptop.display()    
